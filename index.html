@@ -323,14 +323,16 @@
 <script type="text/javascript" src="./js/TopDown1.js">  </script>
 <script>
 	// 给按钮添加单击事件处理程序
-	document.getElementById("exitButton").addEventListener("click", function () {
-		if (confirm("确定要退出吗？")) {
-			// 显示制作人信息
-			alert("制作人：孙承志/姜海宽");
-			// 关闭当前窗口
-			window.close();
-		}
-	});
+  document.getElementById("exitButton").addEventListener("click", function () {
+    console.log("Exit button clicked"); // 添加的 console.log 语句
+    if (confirm("确定要退出吗？")) {
+        // 显示制作人信息
+        alert("制作人：孙承志/姜海宽");
+        // 关闭当前窗口
+        window.close();
+    }
+});
+
 </script>
 </body>
 <script src="./js/1.js" type="text/javascript"></script>
