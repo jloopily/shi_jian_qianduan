@@ -73,7 +73,14 @@
       </ul>
     </div>
         </div>
-</div><div id="fixed-video">
+
+
+
+      
+      
+      
+      </div><div id="fixed-video">
+        <a><button id="exitButton">这里是退出</button></a>
   <video width="640" height="360" controls>
     <source src="1235777952-1-16.mp4" type="video/mp4">
     <source src="your-video.webm" type="video/webm">
@@ -314,6 +321,17 @@
 <script type="text/javascript" src="./js/4.js"></script> 
 <img title='返回顶部' id='up'  style='position: fixed; right: 79px; bottom:39px;  z-index:3;' id='uptop' src='./images/uptop.png' alt='#'>
 <script type="text/javascript" src="./js/TopDown1.js">  </script>
+<script>
+	// 给按钮添加单击事件处理程序
+	document.getElementById("exitButton").addEventListener("click", function () {
+		if (confirm("确定要退出吗？")) {
+			// 显示制作人信息
+			alert("制作人：孙承志/姜海宽");
+			// 关闭当前窗口
+			window.close();
+		}
+	});
+</script>
 </body>
 <script src="./js/1.js" type="text/javascript"></script>
 </html>
